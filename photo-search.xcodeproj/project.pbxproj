@@ -3,27 +3,30 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		BB37FBFB23919FB100B00204 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB37FBFA23919FB100B00204 /* AppDelegate.swift */; };
 		BB37FBFD23919FB100B00204 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB37FBFC23919FB100B00204 /* SceneDelegate.swift */; };
-		BB37FBFF23919FB100B00204 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB37FBFE23919FB100B00204 /* ViewController.swift */; };
-		BB37FC0223919FB100B00204 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB37FC0023919FB100B00204 /* Main.storyboard */; };
 		BB37FC0423919FB500B00204 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB37FC0323919FB500B00204 /* Assets.xcassets */; };
-		BB37FC0723919FB500B00204 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB37FC0523919FB500B00204 /* LaunchScreen.storyboard */; };
+		BB37FC112391A07700B00204 /* PhotoInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB37FC102391A07700B00204 /* PhotoInteractor.swift */; };
+		BB37FC132391A0FC00B00204 /* CollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB37FC122391A0FC00B00204 /* CollectionVC.swift */; };
+		BB37FC152391A10900B00204 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB37FC142391A10900B00204 /* PhotoCell.swift */; };
+		BB37FC192391A17700B00204 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB37FC182391A17700B00204 /* Photo.swift */; };
+		BB37FC1C2391A38D00B00204 /* Stevia in Frameworks */ = {isa = PBXBuildFile; productRef = BB37FC1B2391A38D00B00204 /* Stevia */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BB37FBF723919FB100B00204 /* photo-search.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "photo-search.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB37FBFA23919FB100B00204 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BB37FBFC23919FB100B00204 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BB37FBFE23919FB100B00204 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		BB37FC0123919FB100B00204 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BB37FC0323919FB500B00204 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		BB37FC0623919FB500B00204 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BB37FC0823919FB500B00204 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB37FC102391A07700B00204 /* PhotoInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoInteractor.swift; sourceTree = "<group>"; };
+		BB37FC122391A0FC00B00204 /* CollectionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionVC.swift; sourceTree = "<group>"; };
+		BB37FC142391A10900B00204 /* PhotoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
+		BB37FC182391A17700B00204 /* Photo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB37FC1C2391A38D00B00204 /* Stevia in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,10 +62,11 @@
 			children = (
 				BB37FBFA23919FB100B00204 /* AppDelegate.swift */,
 				BB37FBFC23919FB100B00204 /* SceneDelegate.swift */,
-				BB37FBFE23919FB100B00204 /* ViewController.swift */,
-				BB37FC0023919FB100B00204 /* Main.storyboard */,
+				BB37FC122391A0FC00B00204 /* CollectionVC.swift */,
+				BB37FC142391A10900B00204 /* PhotoCell.swift */,
+				BB37FC182391A17700B00204 /* Photo.swift */,
+				BB37FC102391A07700B00204 /* PhotoInteractor.swift */,
 				BB37FC0323919FB500B00204 /* Assets.xcassets */,
-				BB37FC0523919FB500B00204 /* LaunchScreen.storyboard */,
 				BB37FC0823919FB500B00204 /* Info.plist */,
 			);
 			path = "photo-search";
@@ -83,6 +88,9 @@
 			dependencies = (
 			);
 			name = "photo-search";
+			packageProductDependencies = (
+				BB37FC1B2391A38D00B00204 /* Stevia */,
+			);
 			productName = "photo-search";
 			productReference = BB37FBF723919FB100B00204 /* photo-search.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +119,9 @@
 				Base,
 			);
 			mainGroup = BB37FBEE23919FB100B00204;
+			packageReferences = (
+				BB37FC1A2391A38D00B00204 /* XCRemoteSwiftPackageReference "Stevia" */,
+			);
 			productRefGroup = BB37FBF823919FB100B00204 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,9 +136,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB37FC0723919FB500B00204 /* LaunchScreen.storyboard in Resources */,
 				BB37FC0423919FB500B00204 /* Assets.xcassets in Resources */,
-				BB37FC0223919FB100B00204 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,32 +147,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB37FBFF23919FB100B00204 /* ViewController.swift in Sources */,
 				BB37FBFB23919FB100B00204 /* AppDelegate.swift in Sources */,
 				BB37FBFD23919FB100B00204 /* SceneDelegate.swift in Sources */,
+				BB37FC112391A07700B00204 /* PhotoInteractor.swift in Sources */,
+				BB37FC152391A10900B00204 /* PhotoCell.swift in Sources */,
+				BB37FC132391A0FC00B00204 /* CollectionVC.swift in Sources */,
+				BB37FC192391A17700B00204 /* Photo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		BB37FC0023919FB100B00204 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BB37FC0123919FB100B00204 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		BB37FC0523919FB500B00204 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BB37FC0623919FB500B00204 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		BB37FC0923919FB500B00204 /* Debug */ = {
@@ -336,6 +329,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BB37FC1A2391A38D00B00204 /* XCRemoteSwiftPackageReference "Stevia" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/freshOS/Stevia";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.7.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BB37FC1B2391A38D00B00204 /* Stevia */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BB37FC1A2391A38D00B00204 /* XCRemoteSwiftPackageReference "Stevia" */;
+			productName = Stevia;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BB37FBEF23919FB100B00204 /* Project object */;
 }
